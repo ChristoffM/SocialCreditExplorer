@@ -4,37 +4,34 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="js/jquery-3.2.1.min.js"></script>
-
 <link rel="stylesheet" href="css/w3.css">
-
 <body>
-
-<div class="w3-container w3-blue-gray w3-center">
+<div class="w3-container w3-gray w3-center">
   <h1>Social Credit Exporer</h1>
 </div>
-<div class="w3-container">
-	Choose Cost algorithm:
-	<input class="w3-radio" type="radio" name="type" value="normal" checked>
-	<label>Normal</label>
-	<!--input class="w3-radio" type="radio" name="type" value="growX">
-	<label>Growth (incl sender)</label>
-	<input class="w3-radio" type="radio" name="type" value="grow">
-	<label>Fixed Growth Model</label-->
-	<input class="w3-radio" type="radio" name="type" value="growPh">
-	<label>100% Growth Model</label>
-	<input class="w3-radio" type="radio" name="type" value="growPt">
-	<label>10% Growth Model</label>
-	<input class="w3-radio" type="radio" name="type" value="growPo">
-	<label>1% Growth Model</label>
-	<input class="w3-radio" type="radio" name="type" value="costP">
-	<label>Tx Cost Model</label>
-</div>
-<br>
-  <div class="w3-container">
-    <div class="w3-container w3-half w3-gray w3-right-align">Total Coins in Blockchain</div>
-    <div class="w3-container w3-half" id="total">0</div>
+<div class="w3-row">
+  <div class="w3-light-gray w3-half">
+    Choose Cost algorithm:<br>
+    <input class="w3-radio" type="radio" name="type" value="normal" checked>
+    <label>Normal</label><br>
+    <!--input class="w3-radio" type="radio" name="type" value="growX">
+    <label>Growth (incl sender)</label>
+    <input class="w3-radio" type="radio" name="type" value="grow">
+    <label>Fixed Growth Model</label-->
+    <input class="w3-radio" type="radio" name="type" value="growPh">
+    <label>100% Growth Model</label><br>
+    <input class="w3-radio" type="radio" name="type" value="growPt">
+    <label>10% Growth Model</label><br>
+    <input class="w3-radio" type="radio" name="type" value="growPo">
+    <label>1% Growth Model</label><br>
+    <input class="w3-radio" type="radio" name="type" value="costP">
+    <label>Tx Cost Model</label>
   </div>
-  <br>
+  <div class="w3-half">
+    <div class="w3-half w3-right-align">Total Coins in Blockchain:</div>
+    <div class="w3-half" id="total">0</div>
+  </div>
+</div>
   <div class="w3-container w3-topbar w3-bottombar w3-rightbar w3-leftbar">
     <label class="w3-half">Send from</label>
     <input class="w3-half" type="number" id='fromwho' value="4">
@@ -69,8 +66,8 @@
 
 
 <br><br>
-<div class="w3-container w3-blue-gray w3-center">
-Github page: [none yet]
+<div class="w3-container w3-dark-gray w3-center">
+GitHub repo: <a href="https://github.com/ChristoffM/SocialCreditExplorer"><img src="img/GitHubLogo.png" alt="githublogo"></a>
 </div>
 
 </body>
