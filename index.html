@@ -1,0 +1,78 @@
+ <!DOCTYPE html>
+<html>
+<title>Social Credit Exporer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/jquery-3.2.1.min.js"></script>
+
+<link rel="stylesheet" href="css/w3.css">
+
+<body>
+
+<div class="w3-container w3-blue-gray w3-center">
+  <h1>Social Credit Exporer</h1>
+</div>
+<div class="w3-container">
+	Choose Cost algorithm:
+	<input class="w3-radio" type="radio" name="type" value="normal" checked>
+	<label>Normal</label>
+	<!--input class="w3-radio" type="radio" name="type" value="growX">
+	<label>Growth (incl sender)</label>
+	<input class="w3-radio" type="radio" name="type" value="grow">
+	<label>Fixed Growth Model</label-->
+	<input class="w3-radio" type="radio" name="type" value="growPh">
+	<label>100% Growth Model</label>
+	<input class="w3-radio" type="radio" name="type" value="growPt">
+	<label>10% Growth Model</label>
+	<input class="w3-radio" type="radio" name="type" value="growPo">
+	<label>1% Growth Model</label>
+	<input class="w3-radio" type="radio" name="type" value="costP">
+	<label>Tx Cost Model</label>
+</div>
+<br>
+  <div class="w3-container">
+    <div class="w3-container w3-half w3-gray w3-right-align">Total Coins in Blockchain</div>
+    <div class="w3-container w3-half" id="total">0</div>
+  </div>
+  <br>
+  <div class="w3-container w3-topbar w3-bottombar w3-rightbar w3-leftbar">
+    <label class="w3-half">Send from</label>
+    <input class="w3-half" type="number" id='fromwho' value="4">
+    <label class="w3-half">Send to</label>
+    <input  class="w3-half" type="number" id='towho' value="1">
+    <label class="w3-half">Amount</label>
+    <input  class="w3-half" type="number" id='amount' value="10">
+    <div class="w3-half">Click to send:</div>
+    <button class="w3-blue-gray w3-button w3-half" id='send' value="0">Send</button>
+  </div>
+<br>
+<div class="w3-row">
+  <div class="w3-container w3-third w3-gray w3-right-align">Wallet1</div>
+  <div class="w3-container w3-third w3-border" id="b1">0</div>
+  <div class="w3-container w3-third w3-border"><span id="p1">0</span> %</div>
+</div>
+<div class="w3-row">
+  <div class="w3-container w3-third w3-gray w3-right-align">Wallet2</div>
+  <div class="w3-container w3-third w3-border" id="b2">0</div>
+  <div class="w3-container w3-third w3-border"><span id="p2">0</span> %</div>
+</div>
+<div class="w3-row">
+  <div class="w3-container w3-third w3-gray w3-right-align">Wallet3</div>
+  <div class="w3-container w3-third w3-border" id="b3">0</div>
+  <div class="w3-container w3-third w3-border"><span id="p3">0</span> %</div>
+</div>
+<div class="w3-row">
+  <div class="w3-container w3-third w3-gray w3-right-align">Wallet4</div>
+  <div class="w3-container w3-third w3-border" id="b4">0</div>
+  <div class="w3-container w3-third w3-border"><span id="p4">0</span> %</div>
+</div>
+
+
+<br><br>
+<div class="w3-container w3-blue-gray w3-center">
+Github page: [none yet]
+</div>
+
+</body>
+<script src="js/index.js"></script>
+</html>
